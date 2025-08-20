@@ -2,7 +2,7 @@ const menu = document.getElementById('menu')
 const closeMenu = document.getElementById('closemenu')
 const openMenu = document.getElementById('openmenu')
 closeMenu.addEventListener('click', () => {
-  menu.style.right = '300px'
+  menu.style.right = '-300px'
 })
 openMenu.addEventListener('click', () => {
   menu.style.right = '0'
