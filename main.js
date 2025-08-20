@@ -25,6 +25,6 @@ let inputArea = document.getElementById('inputArea')
 inputArea.addEventListener('dragover', (e) => e.preventDefault())
 inputArea.addEventListener('drop', (e)=>{
   e.preventDefault()
-  fileInput.files = e.dataTransfer.fileSelected
+  fileInput.files = e.dataTransfer.files
   fileSelected()
 })
