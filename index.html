@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Syncora</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="styles/menu.css" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  
+<nav>
+  <img src="logo.png" style="width: 50px;">
+  <h2>Syncora</h2>
+  <i id="openmenu" class="fa-solid fa-bars"></i>
+</nav>
+<menu id="menu">
+  <div class="menutop">
+    <img src="logo.png">
+    <i id="closemenu" class="fa-solid fa-xmark"></i>
+  </div>
+  <div class="dp">
+    <img src="images/profile.webp">
+  </div>
+  <div class="creator">
+    <h1>Khairul I. Sajeeb</h1>
+  </div>
+  <div class="social">
+    <a href="https://www.facebook.com/itssajeeb"><i class="fa-brands fa-square-facebook"></i></a>
+    <a href="https://www.facebook.com/itssajeeb"><i class="fa-brands fa-square-whatsapp"></i></a>
+    <a href="https://www.facebook.com/itssajeeb"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <hr style="margin: 1rem 0; color: #eee;" />
+</menu>
+
+
+
+
+<main>
+<section class="uploadsection">
+  
+  
+  <label id="inputArea" for="fileInput">
+    <input type="file" id="fileInput">
+    <span class=" addFile">+</span>
+    <p id="chosen">Drag and Drop or Select a File</p>
+  </label>
+  <div class="po">
+    <input type="password" id="password" maxlength="4" placeholder="Optional 4-digit password">
+    <select id="expiry">
+      <option value="24" selected>Expiry In</option>
+      <option value="1">1 hour</option>
+      <option value="6">6 hours</option>
+      <option value="24">24 hours</option>
+      <option value="72">3 days</option>
+    </select>
+  </div>
+  
+  <button id="uploadBtn" class="btn">Upload</button>
+</section>
+<section class="downloadsection">
+  <h2>Uploaded Files</h2>
+  <table id="fileTable">
+    <thead>
+      <tr>
+        <th>File Name</th>
+        <th>Exp In</th>
+        <!-- <th>Password</th> -->
+        <th colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody id="fileList"></tbody>
+  </table>
+</section>
+</main>
+<footer>
+  Khairul Islam Sajeeb
+</footer>
+<script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/1220b8dc5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
